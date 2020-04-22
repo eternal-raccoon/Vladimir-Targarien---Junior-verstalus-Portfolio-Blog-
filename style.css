@@ -1,0 +1,2207 @@
+/* Шрифты */
+@font-face {
+  font-family: "Hubbub SSI";
+  src: url(fonts/HubbubSSI.ttf);
+}
+
+@font-face {
+  font-family: "Ouroboros Regular";
+  src: url(fonts/Ouroboros\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "NK86";
+  src: url(fonts/NK86.ttf);
+}
+
+@font-face {
+  font-family: "Ritalin";
+  src: url(fonts/Ritalin.ttf);
+}
+
+@font-face {
+  font-family: "JMH Typewriter dry";
+  src: url(fonts/JMH\ Typewriter\ dry.otf);
+}
+
+@font-face {
+  font-family: "HyliaSerifCyr";
+  src: url(fonts/HyliaSerifCyr.ttf);
+}
+
+@font-face {
+  font-family: "DeroldGOST";
+  src: url(fonts/DeroldGOST.ttf);
+}
+
+@font-face {
+  font-family: "d_MCX";
+  src: url(fonts/d_MCX.ttf);
+}
+
+@font-face {
+  font-family: "Cooper Original";
+  src: url(fonts/Cooper\ Original.ttf);
+}
+
+@font-face {
+  font-family: "Cartoon1407";
+  src: url(fonts/Cartoon1407.otf);
+}
+
+/* Тело */
+body {
+  position: relative;
+  min-width: 1040px;
+  margin: 0;
+  padding: 0;
+  font-family: "Ritalin";
+  font-size: 19px;
+  line-height: 32px;
+}
+
+/* Центрировщик для сеток */
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/* Очиститель потока */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Видимость и невидимость */
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: inline-block;
+}
+
+/* Кнопка скролла на "крышу" */
+.up-and-down {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.up-and-down:hover {
+  text-decoration: none;
+}
+
+.up-and-down-show {
+  display: block;
+}
+
+.up-and-down-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0;
+}
+
+/* Заголовки */
+h1 {
+  margin: 100px 0;
+  text-align: center;
+  font-family: "Cartoon1407";
+  font-size: 99px;
+  line-height: 110px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h2 {
+  margin: 75px 0;
+  text-align: center;
+  font-family: "NK86";
+  font-size: 77px;
+  line-height: 88px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+h3{
+  margin: 50px 0;
+  text-align: center;
+  font-family: "Ouroboros Regular";
+  font-size: 55px;
+  line-height: 66px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h4 {
+  margin: 25px 0;
+  text-align: center;
+  font-family: "Cooper Original";
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.special {
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "HyliaSerifCyr";
+  font-size: 33px;
+  line-height: 44px;
+  text-align: center;
+}
+
+/* Прописной текст (в отдельных элементах контента) */
+.upper-text {
+  text-transform: uppercase;
+ font-family: "Hubbub SSI";
+}
+
+.upper-button {
+  text-transform: uppercase;
+  font-family: "Hubbub SSI";
+  }
+
+.upper-label {
+  text-transform: uppercase;
+  font-family: "HyliaSerifCyr";
+}
+
+/* Переходы на внутренние источники */
+.ref-insource {
+  font-family: "JMH Typewriter dry";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.ref-insource:hover{
+  font-weight: bold;
+  font-style: oblique;
+  border: dashed;
+}
+
+/* Переходы на внешние и источники */
+.ref-outsource {
+  padding: 9px;
+  font-family: "HyliaSerifCyr";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.ref-outsource:hover {
+  text-transform: uppercase;
+  text-decoration: double;
+  text-decoration-line: overline;
+}
+
+/* "Крыша" и "Подвал" */
+.page-header,
+.page-footer {
+  background-image: url("img/bg-tags.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* "Крыша" */
+.page-header {
+  padding-top: 40px;
+  min-height: 200px;
+}
+
+/* Логотип */
+.header-logo {
+  float:left;
+  width: 160px;
+  height: 160px;
+}
+
+/* Меню и подменю навигации*/
+.menu,
+.sub-menu li {
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Меню навигации */
+.menu {
+  float: left;
+  width: 500px;
+  height: 30px;
+  margin-top: 65px;
+  margin-left: 100px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  font-weight: bold;
+}
+
+.menu a:hover {
+  font-weight:800;
+}
+
+/* Подменю навигации */
+.sub-menu {
+  width: 500px;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-menu a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sub-menu a:hover {
+  font-weight: bold;
+  opacity: 0.9;
+  transition: color 0.3s;
+}
+
+/* Механизм выпадения подменю из меню */
+.menu .sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li:hover .sub-menu {
+  display: block;
+}
+
+/* Угловатые скобочки в подменю */
+.sub-menu a:hover::before {
+  content: "<";
+}
+
+.sub-menu a:hover::after {
+  content: ">";
+}
+
+/* Переключатель тем */
+.theme-button {
+  float: right;
+  width: 160px;
+  height: 60px;
+  margin: 50px auto;
+  background-position: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Переключатель всплывающего текста*/
+.button {
+  font-size: inherit;
+  padding: 3px;
+  border-radius: 29px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* Нулевая секция (вступление) */
+.hero-image {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("img/hero-background-html.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.hero-image .photo-one {
+  width:250px;
+  height:374px;
+  padding-left:125px;
+  padding-right:75px;
+  float:left; 
+  border-radius: 40% 30% 40%;
+}
+
+.hero-image .photo-two {
+  width:250px;
+  height:374px;
+  padding-left:75px;
+  padding-right:125px;
+  float:right; 
+  border-radius: 30% 40% 30%;
+}
+
+/* Первая секция ("Обо мне") */
+.intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-me {
+  list-style: none;
+  font-family: "Cartoon1407";
+  font-size: 27px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.about-me li {
+  padding: 11px;
+}
+
+.knowing,
+.technology {
+  float: left;
+  width: 360px;
+}
+
+.technology ul {
+  list-style: none;
+}
+
+.technology li {
+  text-align: center;
+}
+
+.knowing {
+  padding: 11px 9px 11px 10px;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list dt {
+  margin: 0 0 8px;
+  padding-left: 46px;
+  height: 36px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.skill-html {
+  background-image: url("img/icon-html.svg");
+  padding-bottom: 13px;
+}
+
+.skill-css {
+  background-image: url("img/icon-css.svg");
+  padding-bottom: 13px;
+}
+
+.skill-js {
+  background-image: url("img/js-icon.png");
+  padding-bottom: 13px;
+}
+
+.skill-php {
+  background-image: url("img/icon-php.jpg");
+  padding-bottom: 13px;
+}
+
+.skill-less {
+  background-image: url("img/less.png");
+  padding-bottom: 13px;
+}
+
+.level {
+  margin: 0 0 40px;
+  height: 24px;
+  text-align: right;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.skills .level div {
+  margin: 0;
+  height: 24px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  background-image: url("img/progress-pattern.svg");
+}
+
+.technology {
+  padding: 11px 10px 11px 9px;
+}
+
+.although {
+  float: right;
+  width: 235px;
+  padding: 11px 11px 11px 12px;
+}
+
+.agreed {
+  float:left;
+  padding-top: 20px;
+}
+
+/* Вторая секция ("Блог") */
+.chapter {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.chapter dl {
+  padding: 0;
+  margin: 0;
+  width: 800px;
+}
+
+.article-chapter {
+  float: left;
+  width: 750px;
+}
+
+.article-chapter:not(last-child) {
+  margin-bottom: 70px;
+}
+
+.article-chapter-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.chapter dd {
+  position: relative;
+  min-height: 120px;
+  margin: 0;
+  padding-left: 210px;
+}
+
+.chapter dd img {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 120px;
+}
+
+.chapter dd p {
+  margin: 0;
+}
+
+/* Третья секция ("Портфолио") */
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.example-landing,
+.example-site {
+  float: left;
+  width: 300px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.example-landing img {
+ width: 280px;
+ height: 120px;
+ padding-left: 10px;
+ padding-right: 10px;
+ border-radius: 17%;
+}
+
+.example-site img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  border-radius: 50%;
+}
+
+.example-landing p,
+.example-site p {
+  font-family: "cartoon1407";
+}
+.example-landing .heart,
+.example-site .heart {
+  float: left;
+}
+
+.example-landing .heart,
+.example-site .heart {
+  margin: 0;
+  padding: 7px 12px;
+  display: flex;
+  background-image: url("img/icon-heart-dark.svg");
+  vertical-align: baseline;
+  font-size: 21px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+}
+
+.example-landing .heart:hover,
+.example-site .heart:hover,
+.example-landing .heart:active,
+.example-site .heart:active {
+  margin: 0;
+  padding: 7px 12px;
+  display: flex;
+  background-image: url("img/icon-heart-dark-active.svg");
+  vertical-align: baseline;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+}
+
+.example-landing .heart:focus,
+.example-site .heart:focus {
+  margin: 0;
+  padding: 7px 12px;
+  display: flex;
+  background-image: url("img/icon-heart-dark-added.svg");
+  vertical-align: baseline;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+}
+
+.example-landing .button-see-all,
+.example-site .button-see-all {
+  float: left;
+}
+
+.example-landing .button-see,
+.example-site .button-see {
+  float: right;
+}
+
+.example-landing .button-see,
+.example-site .button-see,
+.example-landing .button-see-all,
+.example-site .button-see-all {
+  margin: 0;
+  padding: 8px 24px;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.example-landing .button-see:focus,
+.example-site .button-see:focus,
+.example-landing .button-see:hover,
+.example-site .button-see:hover,
+.example-landing .button-see-all:focus,
+.example-site .button-see-all:focus,
+.example-landing .button-see-all:hover,
+.example-site .button-see-all:hover {
+  cursor: pointer;
+}
+
+.example-landing .button-see:active,
+.example-site .button-see:active,
+.example-landing .button-see-all:active,
+.example-site .button-see-all:active {
+  box-shadow: none;
+}
+
+/* Четвёртая секция ("Прайс") */
+.price {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Прайс-лист */
+.price-list {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.price-list th {
+  font-family: "DeroldGOST";
+  font-weight: normal;
+  font-size: 29px;
+}
+
+.price-list th,
+.price-list td {
+  padding: 5px 10px;
+}
+
+.price-list .price-name {
+  font-weight: bold;
+}
+
+.price-sub-name {
+ font-style: italic;
+}
+
+/* Раздел о действующих акциях */
+.action {
+  float: left;
+  width: 300px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.action img {
+  max-width: 300px;
+  height: 200px;
+}
+
+.action b,
+.action i {
+  font-family: "Ritalin";
+}
+
+.action i {
+  font-weight: 800;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.action .button-describe {
+  float: left;
+}
+
+.action .button-order {
+  float: right;
+}
+
+.action .button-describe,
+.action .button-order {
+  margin: 0;
+  padding: 8px 24px;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.action .button-describe:focus,
+.action .button-order:focus,
+.action .button-describe:hover,
+.action .button-order:hover {
+  cursor: pointer;
+}
+
+.action .button-describe:active,
+.action .button-order:active {
+  box-shadow: none;
+}
+
+.space {
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  padding: 9px 220px 9px 0;
+  margin: 9px 0;
+}
+
+/* Раздел о том, почему выбрать следует меня */
+.features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-item {
+  float: left;
+  width: 279px;
+  padding-top: 150px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+/* Пятая секция ("Отзывы") */
+.review {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.review-out {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 30px 35px 0 35px;
+  padding: 20px 0;
+  max-width: 270px;
+  border-width: 1px 0;
+}
+
+.review-in {
+  font-family: "HyliaSerifCyr";
+  position: relative;
+  margin: 0 -20px;
+  padding: 0 40px;
+}
+
+.review-in p {
+  margin: 0 0 1em;
+  font-size: 1.5em;
+}
+
+.review-author {
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  text-align: right;
+}
+
+.review-in::before,
+.review-in::after,
+.review-out::before {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  content: "";
+}
+
+.review-in::before {
+  bottom: -60px;
+  left: -40px;
+  clip: rect(auto, auto, 40px, 40px);
+}
+
+.review-in::after {
+  right: -40px;
+  bottom: -60px;
+  clip: rect(auto, 40px, 40px, auto);
+}
+
+.review-out::before {
+  top: -40px;
+  left: -60px;
+  clip: rect(40px, auto, auto, 40px);
+}
+
+.review-out::after {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  content: "";
+  border-radius: 50%;
+  top: -40px;
+  right: -60px;
+  clip: rect(40px, 40px, auto, auto);
+}
+
+.all-reviews {
+  margin: 0;
+  padding: 8px 24px;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.all-reviews:hover,
+.all-reviews:focus {
+  cursor: pointer;
+}
+
+.all-reviews:active {
+  box-shadow: none;
+}
+
+/* Шестая секция ("Контакты") */
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contacts .container {
+  position: relative;
+}
+
+/* Форма отправки */
+.feedback-form {
+  width: 630px;
+  padding-right: 390px;
+  background-image: url("img/Darth Rac'Coon_guardian-post.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 40px;
+}
+
+.feedback-form-group {
+  margin: 15px;
+}
+
+label {
+  display: inline-block;
+  padding: 5px;
+  padding-left: 17px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.left-part,
+.right-part {
+  width: 280px;
+}
+
+.left-part {
+  float: left;
+}
+
+.right-part {
+  float: right;
+}
+
+ input[type="text"],
+ select,
+ textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 9px 16px;
+  font-family: "JMH Typewriter dry";
+  font-size: 19px;
+}
+
+ input[type="text"]:hover,
+ select:hover,
+ textarea:hover { 
+  opacity: 0.5;
+}
+
+ input[type="text"]:focus,
+ select:focus,
+ textarea:focus { 
+  opacity: 0.9;
+}
+
+input:required {
+  border-style: solid;
+}
+
+input[type="text"]:optional {
+  border-style: dashed;
+}
+
+.feedback-form textarea {
+  display: block;
+  min-height: 120px;
+}
+
+.checkbox-area {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 17px;
+  border-width: medium;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.button-send {
+  margin: 0;
+  margin-top: 40px;
+  padding: 8px 24px;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.button-send:hover,
+.button-send:focus {
+  cursor: pointer;
+}
+
+.button-send:active {
+  box-shadow: none;
+}
+
+.special .ref-insource {
+ text-transform: uppercase; 
+}
+
+/* "Подвал" */
+.page-footer {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+/* Верхняя секция "Подвала" */
+.footer-top {
+  margin-bottom: 45px;
+}
+
+.footer-logo {
+  float: left;
+  width: 160px;
+  height: 160px;
+}
+
+.footer-button-order {
+  float: right;
+  margin: 0;
+  margin-top: 55px;
+  padding: 8px 24px;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.footer-button-order:focus,
+.footer-button-order:hover {
+  cursor: pointer;
+}
+
+.footer-button-order:active {
+  box-shadow: none;
+}
+
+/* Средняя секция "Подвала" */
+.footer-middle {
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.footer-menu {
+  float: left;
+  width: 190px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer-menu h4 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu li {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer-menu a:active {
+  opacity: 0.4;
+}
+
+/* Нижняя секция "Подвала" */
+.footer-bottom {
+  padding-top: 50px;
+}
+
+.footer-social {
+  float: left;
+  width: 700px;
+  padding-right: 10px;
+}
+
+.social-icon-button{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 17px;
+  vertical-align: middle;
+}
+
+.social-icon-button:active {
+  opacity: 0.1;
+}
+
+.bg-be_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -220px -10px;
+}
+
+.bg-fb_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -290px -10px;
+}
+
+.bg-in_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -360px -10px;
+}
+
+.bg-g-plus_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -430px -10px;
+}
+
+.bg-pin_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -500px -10px;
+}
+
+.bg-tele_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -80px -10px;
+}
+
+.bg-twi_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -150px -10px;
+}
+
+.bg-vk_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -10px -10px;
+}
+
+.bg-yx_logo {
+  width: 50px; height: 50px;
+  background: url('img/css_sprites.png') -570px -10px;
+}
+
+.footer-copyright {
+  float: right;
+  padding-left: 9px;
+  width: 300px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* "Тёмная" тема */
+.dark-theme {
+  color: #f2f2f2;
+  background-color: #141530;
+  background-image: url("img/pattern-lines-hero.svg");
+  background-position: center;
+}
+
+/* "Тёмный переключатель всплывающего текста*/
+.dark-theme .button {
+  color: slateblue;
+}
+.dark-theme .button:hover {
+  color: khaki;
+  background-color: black;
+  border: 2px dashed yellow
+}
+
+.dark-theme .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .popup {
+  color: #f9dd79;
+  background-color: black;
+}
+
+.dark-theme .popup .close {
+  color: #333;
+}
+
+.dark-theme .popup .close:hover {
+  color: indigo;
+}
+
+/* "Тёмная" кнопка скролла на "крышу" */
+.dark-theme .up-and-down {
+  color: indigo;
+  background-color: slateblue;
+  border: 2px solid ivory;
+}
+
+.dark-theme .up-and-down:hover {
+  color: yellow;
+  background-color: black;
+  border: 2px dashed yellow;
+}
+
+
+/* "Тёмные" ссылки на внешние источники */
+.dark-theme .ref-outsource {
+  color: #f9dd79;
+}
+
+.dark-theme .ref-outsource:hover {
+  color: #f7f21a;
+  transition: color 0.4s;
+}
+
+/* "Тёмные" ссылки на внутренние источники */
+.dark-theme .ref-insource {
+  color: #f9dd79;
+}
+
+.dark-theme .ref-insource:hover {
+  color: #f7f21a;
+  transition: color 0.7s;
+  background-color: black;
+  border: dashed 2px yellow;
+}
+
+/* "Тёмные" заголовки */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4 {
+  color: #f9dd79;
+}
+
+.dark-theme h1 {
+  text-shadow:
+  -8px -8px 8px black,
+  16px 16px 8px #252850;
+}
+
+.dark-theme h2 {
+  text-shadow:
+    -4px -4px 4px black,
+    8px 8px 4px #252850;
+}
+
+.dark-theme h3 {
+  text-shadow:
+    -2px -2px 2px black,
+    4px 4px 2px #252850;
+}
+
+.dark-theme h4 {
+  text-shadow:
+    -1px -1px 1px black,
+    2px 2px 1px #252850;
+}
+
+/* "Тёмные" крыша и подвал */
+.dark-theme .page-header,
+.dark-theme .page-footer {
+  background-color: #252850;
+}
+
+/* "Тёмная" нулевая секция */
+.dark-theme .special {
+  color: #f9dd79;
+  text-shadow:
+    -1px -1px 1px black,
+    2px 2px 1px #252850;
+}
+
+/* "Тёмное" лого */
+.dark-theme .header-logo {
+  border: solid 2px #eee8aa;
+  background: url(img/My-Logo-White-on-Black.jpg); 
+}
+
+.dark-theme .header-logo:hover {
+  border: dashed 3px #f4c800;
+}
+
+/* "Тёмное" меню */
+.dark-theme .menu {
+  color: #eee8aa;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: cursive;
+  background-color: #0a0a0a;
+  border: solid 2px #eee8aa;
+  border-radius: 4px;
+}
+
+.dark-theme .menu:hover {
+  color: #f7f21a;
+  font-size: 21px;
+  font-weight: 500;
+  border: dashed 4px #f4c800;
+  border-radius: 6px;
+}
+
+/* "Тёмное" подменю */
+.dark-theme .sub-menu li {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: cursive;
+  border: solid 1px #eee8aa;
+  border-radius: 8px;
+  background-color: black;
+}
+
+.dark-theme .sub-menu li:hover {
+  font-size: 21px;
+  font-weight: 500;
+  border: dashed 2px yellow;
+  border-radius: 12px;
+  background-color: slateblue;
+}
+
+.dark-theme .menu .sub-menu a {
+  color: #eee8aa;
+}
+
+.dark-theme .menu .sub-menu a:hover {
+  color: #f7f21a;
+}
+
+/* "Тёмный" механизм выпадения */
+.dark-theme .menu > li:hover .sub-menu {
+  border: dashed 3px #f4c800;
+}
+
+/* "Тёмный" переключатель тем */
+.dark-theme .theme-button {
+  background-color: #0a0a0a;
+  background-image: url("img/sun-dark.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border: solid 2px #eee8aa;
+  border-radius: 4px;
+  color: #eee8aa;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: cursive;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.dark-theme .theme-button:hover {
+  background-color: #181513;
+  background-image: url("img/sun-light.svg");
+  border: dashed 3px yellow;
+  border-radius: 6px;
+  color: khaki;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: cursive;
+  cursor:pointer;
+}
+
+/* "Тёмная" первая секция */ 
+/* "Тёмные" границы статей */
+.dark-theme .knowing {
+  border-right: 1px solid yellow;
+}
+
+.dark-theme .technology {
+  border-left: 1px solid yellow;
+}
+
+.dark-theme .although {
+  border-left: 1px solid yellow;
+}
+
+/* "Тёмный" уровень владения */
+.dark-theme .level {
+  background-color: black;
+  box-shadow: inset 0 0 12px ivory;
+}
+
+/* "Тёмное" заполнение шкалы */
+.dark-theme .skills .level div {
+  background-color: slateblue;
+}
+
+/* "Тёмная" третья секция ("Портфолио") */
+.dark-theme .example-landing,
+.dark-theme .example-site {
+  border: solid 3px yellow;
+  box-shadow: 0 0 0 3px #b77d3e
+}
+
+.dark-theme .example-landing .heart,
+.dark-theme .example-site .heart {
+  background-color: #f9dd79;
+  color: blue;
+}
+
+.dark-theme .example-landing .heart:hover,
+.dark-theme .example-site .heart:hover,
+.dark-theme .example-landing .heart:active,
+.dark-theme .example-site .heart:active {
+  background-color: #f9dd79;
+  color: yellow;
+}
+
+.dark-theme .example-landing .heart:focus,
+.dark-theme .example-site .heart:focus {
+  background-color: #f9dd79;
+  color: indigo;
+}
+
+.dark-theme .example-landing .button-see,
+.dark-theme .example-site .button-see,
+.dark-theme .example-landing .button-see-all,
+.dark-theme .example-site .button-see-all {
+  color: #0b0c23;
+  background-color: #f9dd79;
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+}
+
+.dark-theme .example-landing .button-see:focus,
+.dark-theme .example-site .button-see:focus,
+.dark-theme .example-landing .button-see:hover,
+.dark-theme .example-site .button-see:hover,
+.dark-theme .example-landing .button-see-all:focus,
+.dark-theme .example-site .button-see-all:focus,
+.dark-theme .example-landing .button-see-all:hover,
+.dark-theme .example-site .button-see-all:hover {
+  box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.dark-theme .example-landing .button-see:active,
+.dark-theme .example-site .button-see:active,
+.dark-theme .example-landing .button-see-all:active,
+.dark-theme .example-site .button-see-all:active {
+  background-color: #b69e4b;
+}
+
+/* "Тёмная" четвёртая секция */
+/* "Тёмный" прайс-лист */
+.dark-theme .price-list td {
+  border: 2px solid #f9dd79;
+}
+
+/* "Тёмный" раздел о действующих акциях */
+.dark-theme .action {
+  border: solid 3px yellow;
+  box-shadow: 0 0 0 3px #b77d3e;
+}
+
+.dark-theme .action b {
+  color: #f9dd79;
+}
+
+.dark-theme .action i {
+  color: #f9dd79;
+}
+
+.dark-theme .action .button-describe,
+.dark-theme .action .button-order {
+  color: #0b0c23;
+  background-color: #f9dd79;
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+}
+
+.dark-theme .action .button-describe:focus,
+.dark-theme .action .button-order:focus,
+.dark-theme .action .button-describe:hover,
+.dark-theme .action .button-order:hover {
+  background-color: #f9e7a8;
+  box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.dark-theme .action .button-describe:active,
+.dark-theme .action .button-order:active {
+  background-color: #b69e4b;
+}
+
+/* "Тёмный" раздел о том, почему выбрать следует меня*/
+/* "Тёмные" конкурентные преимущества*/
+.dark-theme .feature-item {
+  border-left: 1px solid #d9d9d9;
+}
+
+.dark-theme .feature-item:first-child {
+  border-left-color: transparent;
+}
+
+.dark-theme .feature-choice {
+  background: url("img/тёмный_выбор.png") top center no-repeat;
+}
+.dark-theme .feature-quality {
+  background: url("img/тёмное_качество.png") top center no-repeat;
+}
+.dark-theme .feature-price {
+  background: url("img/тёмная_цена.png") top center no-repeat;
+}
+
+/* "Тёмная" пятая секция */
+.dark-theme .review-out {
+  border: 1px solid #0b0c23;
+  background-color: #f9dd79; 
+  box-shadow: 0 0 0 3px #b77d3e;
+}
+
+.dark-theme .review-in {
+  color: #0b0c23;
+}
+
+.dark-theme .review-author {
+  color: #0b0c23;
+}
+
+.dark-theme .review-in::before,
+.dark-theme .review-in::after,
+.dark-theme .review-out::before {
+  border: 20px solid #f9dd79; 
+  box-shadow: 0 0 0 3px #b77d3e;
+}
+
+.dark-theme .dark-theme .review-out {
+  border-left: #a38b70;
+ }
+
+.dark-theme .dark-theme .review-out::after {
+  border: 20px solid #f9dd79; 
+  box-shadow: 0 0 0 3px #b77d3e;
+}
+
+.dark-theme .all-reviews {
+  color: #0b0c23;
+  background-color: #f9dd79; 
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+}
+
+.dark-theme .all-reviews:hover,
+.dark-theme .all-reviews:focus {
+  background-color: #f9e7a8;
+  box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.dark-theme .all-reviews:active {
+  background-color: #b69e4b;
+}
+
+/* "Тёмная" шестая секция ("Контакты") */
+/* "Тёмная" форма отправки */
+.dark-theme label {
+  color: ivory;
+}
+
+.dark-theme input[name^="raccoon"],
+.dark-theme select,
+.dark-theme textarea {
+  color: ivory;
+  border: 2px solid yellow;
+  background-color: black;
+}
+
+.dark-theme input:required {
+  background: black url('img/raccoon-paw-required-dark.png') no-repeat 100% 50%;
+  color: ivory;
+  border: 2px solid yellow;
+}
+
+.dark-theme input[type="text"]:optional {
+  background: black url("img/raccoon-paw-optional-dark.png") no-repeat 100% 50%;
+  color: ivory;
+  border: 2px dashed yellow;
+}
+
+.dark-theme input[name$="phone"]:valid {
+  color: #2ecc71;
+}
+
+.dark-theme input[name$="phone"]:invalid {
+  color: #e74c3c;
+}
+
+.dark-theme .checkbox-area {
+  border-bottom: 1px dotted #f9dd79; 
+}
+
+.dark-theme .checkbox-area:hover {
+  border-color: #f7f21a;
+}
+
+.dark-theme .button-send {
+  color: #0b0c23;
+  background-color: #f9dd79;
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+}
+
+.dark-theme .button-send:hover,
+.dark-theme .button-send:focus {
+  background-color: #f9dd79;
+  box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.dark-theme .button-send:active {
+  background-color: #f9dd79;
+}
+
+/* "Тёмный" "Подвал" */
+/* "Тёмная" верхняя секция "Подвала" */
+.dark-theme .footer-logo {
+  border: solid 2px #eee8aa;
+  background: url(img/My-Logo-White-on-Black.jpg); 
+}
+
+.dark-theme .footer-logo:hover {
+  border: dashed 3px #f4c800;
+}
+
+.dark-theme .footer-button-order {
+  color: #0b0c23;
+  background-color: #f9dd79;
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+}
+
+.dark-theme .footer-button-order:focus,
+.dark-theme .footer-button-order:hover {
+  background-color: #f9e7a8;
+  box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.dark-theme .footer-button-order:active {
+  background-color: #b69e4b;
+}
+
+/* "Тёмная" средняя секция "Подвала" */
+.dark-theme .footer-menu a {
+  color: #f9dd79;
+  text-decoration: none;
+}
+
+.dark-theme .footer-menu a:hover {
+  color: yellow;
+}
+
+.dark-theme .footer-menu a:active {
+  color: yellow;
+  opacity: 0.3;
+}
+
+/* "Тёмная" нижняя секция "Подвала" */
+.dark-theme .social-icon-button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark-theme .social-icon-button:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .social-icon-button:active {
+  border-color: #ffffff;
+}
+
+.dark-theme .footer-copyright {
+  color: #ffffff;
+}
+
+/* "Тёмные" линии в "Подвале" */
+.dark-theme .footer-middle,
+.dark-theme .footer-bottom {
+  border-top: 1px solid #5e5e5e;
+}
+
+/* "Светлая" тема */
+.light-theme {
+  color: black;
+  background-color: lightgreen;
+  background-image: url("img/pattern-lines-hero.svg");
+  background-position: center;
+}
+
+/* "Светлые" крыша и подвал */
+.light-theme .page-header,
+.light-theme .page-footer {
+  background-color: limegreen;
+}
+
+.light-theme .page-footer {
+  background-color: limegreen;
+  background-image: none;
+}
+
+/* "Светлые" заголовки */
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4 {
+  color: green;
+}
+
+.light-theme h1 {
+  text-shadow:
+  -8px -8px 8px black,
+  16px 16px 8px limegreen;
+}
+
+.light-theme h2 {
+  text-shadow:
+    -4px -4px 4px black,
+    8px 8px 4px limegreen;
+}
+
+.light-theme h3 {
+  text-shadow:
+    -2px -2px 2px black,
+    4px 4px 2px limegreen;
+}
+
+.light-theme h4 {
+  text-shadow:
+    -1px -1px 1px black,
+    2px 2px 1px limegreen;
+}
+
+/* "Светлый" абзац (Нулевая секция) */
+.light-theme .special{
+  color: green;
+}
+
+/* "Светлый" переключатель всплывающего текста*/
+.light-theme .button {
+  color: darkcyan;
+}
+.light-theme .button:hover {
+  color: darkgreen;
+  font-weight: bold;
+  background-color: ivory;
+  border: 2px dashed limegreen;
+}
+
+.light-theme .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.light-theme .popup {
+  color: green;
+  background-color: white;
+}
+
+.light-theme .popup .close {
+  color: black;
+}
+
+.light-theme .popup .close:hover {
+  color: limegreen;
+}
+
+/* "Светлая" кнопка скролла на "крышу" */
+.light-theme .up-and-down {
+  color: ivory;
+  background-color: darkgreen;
+  border: 2px solid black;
+}
+
+.light-theme .up-and-down:hover {
+  color: darkgreen;
+  background-color: ivory;
+  border: 2px dashed limegreen;
+}
+
+/* "Светлые" ссылки на внешние источники */
+.light-theme .ref-outsource {
+  color: green;
+}
+
+.light-theme .ref-outsource:hover {
+  color: darkgreen;
+}
+
+/* "Светлые" ссылки на внутренние источники */
+.light-theme .ref-insource {
+  color: green;
+}
+
+.light-theme .ref-insource:hover {
+  color: darkgreen;
+  transition: color 0.7s;
+  background-color: ivory;
+  border: dashed 2px limegreen;
+}
+
+/* "Светлое" лого */
+.light-theme .header-logo {
+  background: url(img/My-Logo-Black-on-White.jpg);
+  border: 2px solid black;
+}
+
+.light-theme .header-logo:hover {
+  border: dashed 3px darkgreen;
+}
+
+/* "Светлое" меню */
+.light-theme .menu {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: cursive;
+  background-color: ivory;
+  border: solid 2px black;
+  border-radius: 4px;
+}
+
+.light-theme .menu:hover {
+  color: lightgreen;
+  font-size: 21px;
+  font-weight: 500;
+  border: dashed 4px darkgreen;
+  border-radius: 6px;
+}
+
+/* "Светлое" подменю */
+.light-theme .sub-menu li {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: cursive;
+  border: solid 1px black;
+  border-radius: 8px;
+  background-color: ivory;
+}
+
+.light-theme .sub-menu li:hover {
+  font-size: 21px;
+  font-weight: 500;
+  border: dashed 2px darkgreen;
+  border-radius: 12px;
+  background-color: green;
+}
+
+.light-theme .menu .sub-menu a {
+  color: black;
+}
+
+.light-theme .menu .sub-menu a:hover {
+  color: lightgreen;
+}
+
+/* "Светлый" механизм выпадения */
+.light-theme .menu > li:hover .sub-menu {
+  border: dashed 3px darkgreen;
+}
+
+/* "Светлый" переключатель тем */
+.light-theme .theme-button {
+  background-color: ivory;
+  background-image: url("img/sun-light.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border: solid 2px black;
+  border-radius: 4px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: cursive;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.light-theme .theme-button:hover {
+  background-color: ivory;
+  background-image: url("img/sun-dark.svg");
+  border: dashed 3px darkgreen;
+  border-radius: 6px;
+  color: dodgerblue;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: cursive;
+  cursor:pointer;
+}
+
+/* "Светлая" первая секция */ 
+/* "Светлые" границы статей */
+.light-theme .knowing {
+  border-right: 1px solid limegreen;
+}
+
+.light-theme .technology {
+  border-left: 1px solid limegreen;
+}
+
+.light-theme .although {
+  border-left: 1px solid limegreen;
+}
+
+/* "Светлый" уровень владения */
+.light-theme .level {
+  background-color: ivory;
+  box-shadow: inset 0 0 12px black;
+}
+
+/* "Светлое" заполнение шкалы */
+.light-theme .skills .level div {
+  background-color: darkgreen;
+}
+
+/* "Светлая" третья секция ("Портфолио") */
+.light-theme .example-landing,
+.light-theme .example-site {
+  border: solid 3px limegreen;
+  box-shadow: 0 0 0 3px darkgreen;
+}
+
+.light-theme .example-landing .button-see,
+.light-theme .example-site .button-see,
+.light-theme .example-landing .button-see-all,
+.light-theme .example-site .button-see-all {
+  color: lightgreen;
+  background-color: green;
+  box-shadow: 0 4px 16px darkgreen;
+  opacity: 0.8;
+}
+
+.light-theme .example-landing .button-see:focus,
+.light-theme .example-site .button-see:focus,
+.light-theme .example-landing .button-see:hover,
+.light-theme .example-site .button-see:hover,
+.light-theme .example-landing .button-see-all:focus,
+.light-theme .example-site .button-see-all:focus,
+.light-theme .example-landing .button-see-all:hover,
+.light-theme .example-site .button-see-all:hover {
+  box-shadow: 0 4px 32px darkgreen;
+  opacity: 0.4;
+}
+
+.light-theme .example-landing .button-see:active,
+.light-theme .example-site .button-see:active,
+.light-theme .example-landing .button-see-all:active,
+.light-theme .example-site .button-see-all:active {
+  color: darkgreen;
+  background-color: lime;
+}
+
+/* "Светлая" четвёртая секция */
+/* "Светлый" прайс-лист */
+.light-theme .price-list td {
+  border: 2px solid green;
+}
+
+/* "Светлый" раздел о действующих акциях */
+.light-theme .action {
+  border: solid 3px limegreen;
+  box-shadow: 0 0 0 3px darkgreen;
+}
+
+.light-theme .action b {
+  color: green;
+}
+
+.light-theme .action i {
+  color: green;
+}
+
+.light-theme .action .button-describe,
+.light-theme .action .button-order {
+  color: lightgreen;
+  background-color: green;
+  box-shadow: 0 4px 16px darkgreen;
+  opacity: 0.8;
+}
+
+.light-theme .action .button-describe:focus,
+.light-theme .action .button-order:focus,
+.light-theme .action .button-describe:hover,
+.light-theme .action .button-order:hover {
+  background-color: green;
+  box-shadow: 0 4px 32px darkgreen;
+  opacity: 0.4;
+}
+
+.light-theme .action .button-describe:active,
+.light-theme .action .button-order:active {
+  color: darkgreen;
+  background-color: limegreen;
+}
+
+/* "Светлый" раздел о том, почему выбрать следует меня*/
+.light-theme .feature-item {
+  border-left: 1px solid limegreen;
+}
+
+.light-theme .feature-item:first-child {
+  border-left-color: transparent;
+}
+
+.light-theme .feature-choice {
+  background: url("img/светлый_выбор.png") top center no-repeat;
+}
+.light-theme .feature-quality {
+  background: url("img/светлое_качество.png") top center no-repeat;
+}
+.light-theme .feature-price {
+  background: url("img/светлая_цена.png") top center no-repeat;
+}
+
+/* "Светлая пятая секция */
+.light-theme .review-out {
+  border: 1px solid limegreen;
+  background-color: green; 
+  box-shadow: 0 0 0 3px darkgreen;
+}
+
+.light-theme .review-in {
+  color: lightgreen;
+}
+
+.light-theme .review-author {
+  color: lightgreen;
+}
+
+.light-theme .review-in::before,
+.light-theme .review-in::after,
+.light-theme .review-out::before {
+  border: 20px solid limegreen; 
+  box-shadow: 0 0 0 3px darkgreen;
+}
+
+.light-theme .review-out {
+  border-left: limegreen;
+ }
+
+ .light-theme .review-out::after {
+  border: 20px solid limegreen; 
+  box-shadow: 0 0 0 3px darkgreen;
+}
+
+.light-theme .all-reviews {
+  color: lightgreen;
+  background-color: green;
+  box-shadow: 0 4px 16px darkgreen;
+  opacity: 0.8;
+}
+
+.light-theme .all-reviews:hover,
+.light-theme .all-reviews:focus {
+  background-color: green;
+  box-shadow: 0 4px 32px darkgreen;
+  opacity: 0.4;
+}
+
+.light-theme .all-reviews:active {
+  color: darkgreen;
+  background-color: limegreen;
+}
+
+/* "Светлая" шестая секция ("Контакты") */
+/* "Светлая" форма отправки */
+.light-theme label {
+  color: black;
+}
+
+.light-theme input[name^="raccoon"],
+.light-theme select,
+.light-theme textarea {
+  color: black;
+  border: 2px solid darkgreen;
+  background-color: ivory;
+}
+
+.light-theme input:required {
+  background: ivory url('img/raccoon-paw-required-light.png') no-repeat 100% 50%;
+  color: black;
+  border: 2px solid darkgreen;
+}
+
+.light-theme input[type="text"]:optional {
+  background: ivory url("img/raccoon-paw-optional-light.png") no-repeat 100% 50%;
+  color: black;
+  border: 2px dashed darkgreen;
+}
+
+.light-theme input[name$="phone"]:valid {
+  color: green;
+}
+
+.light-theme input[name$="phone"]:invalid {
+  color: red;
+}
+
+.light-theme .checkbox-area {
+  border-bottom: 1px dotted green; 
+}
+
+.light-theme .checkbox-area:hover {
+  border-color: limegreen;
+}
+
+.light-theme .button-send {
+  color: lightgreen;
+  background-color: green;
+  box-shadow: 0 4px 16px darkgreen;
+  opacity: 0.8;
+}
+
+.light-theme .button-send:hover,
+.light-theme .button-send:focus {
+  background-color: green;
+  box-shadow: 0 4px 32px darkgreen;
+  opacity: 0.4;
+}
+
+.light-theme .button-send:active {
+  color: darkgreen;
+  background-color: limegreen;
+}
+
+/* "Светлый" "Подвал" */
+/* "Светлая" верхняя секция "Подвала" */
+.light-theme .footer-logo {
+  background: url(img/My-Logo-Black-on-White.jpg);
+  border: 2px solid black;
+}
+
+.light-theme .footer-logo:hover {
+  border: dashed 3px darkgreen;
+}
+
+.light-theme .footer-button-order {
+  color: lightgreen;
+  background-color: green;
+  box-shadow: 0 4px 16px darkgreen;
+  opacity: 0.8;
+}
+
+.light-theme .footer-button-order:focus,
+.light-theme .footer-button-order:hover {
+  background-color: green;
+  box-shadow: 0 4px 32px darkgreen;
+  opacity: 0.4;
+}
+
+.light-theme .footer-button-order:active {
+  color: darkgreen;
+  background-color: limegreen;
+}
+
+/* "Светлая" средняя секция "Подвала" */
+.light-theme .footer-menu a {
+  color: green;
+  text-decoration: none;
+}
+
+.light-theme .footer-menu a:hover {
+  color: limegreen;
+}
+
+.light-theme .footer-menu a:active {
+  color: limegreen;
+  opacity: 0.3;
+}
+
+/* "Светлая" нижняя секция "Подвала" */
+.light-theme .social-icon-button {
+  border: 1px solid darkgreen;
+}
+
+.light-theme .social-icon-button:hover {
+  border: 1px dashed lightgreen;
+}
+
+.light-theme .social-icon-button:active {
+  border-color: limegreen;
+}
+
+.light-theme .footer-copyright {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+/* "Светлые" линии в "Подвале" */
+.light-theme .footer-middle,
+.light-theme .footer-bottom {
+  border-top: 1px solid darkgreen;
+}

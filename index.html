@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <title>Junior-верстальщик Владимир Таргариен</title>
+  </head>
+  <body class="page dark-theme">
+    <!-- "Крыша" -->
+    <header class="page-header">
+      <nav class="container clearfix">
+        <!-- Лого -->
+        <a class="header-logo" href="index.html"></a>
+        <!-- Меню навигации -->
+        <ul class="menu">
+          <li><a title="Что Вас интересует?">Меню</a>
+            <ul class="sub-menu">
+              <li><a href="index.html#Introductor" title="Кто я?">Обо мне</a>
+              <li><a href="index.html#V-log" title="О чём мой блог?">Блог</a></li>
+              <li><a href="index.html#Porter" title="Что уже мною сделано?">Портфолио</a></li>
+              <li><a href="index.html#Pricer" title="Сколько стоят мои услуги?">Прайс</a></li>
+              <li><a href="index.html#Revium" title="Что говорят довольные клиенты?">Отзывы</a></li>
+              <li><a href="index.html#Contactor" title="Где меня найти?">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Переключатель тем -->
+        <button class="theme-button upper-button" type="button">Изменить <br>тему</button>
+      </nav>
+    </header>
+    <!-- "Корпус" -->
+    <main>
+      <!-- Нулевая секция (вступление) -->
+      <section class="hero-image" id="Me">
+        <div class="container clearfix">
+          <h1>Владимир<br>Таргариен</h1>
+          <p class="special">Галактический Енот
+          <br>&
+          <br>Junior-верстальщик</p>
+          <img class="photo-one" src="img/Darth Rac'Coon-mirror.jpg" alt="фото: Галактический Енот">
+          <img class="photo-two" src="img/Me-main.jpg" alt="фото: Владимир Таргариен">
+        </div>
+      </section>
+      <!-- Первая секция ("Обо мне")-->
+      <section class="intro" id="Introductor">
+        <div class="container clearfix">
+        <h2>Давайте познакомимся</h2>
+        <h3 id="what-I-do">Кто я?</h3>
+        <ul class="about-me">
+          <li>junior-верстальщик</li>
+          <li>копирайтер</li>
+          <li>UI/UX-дизайнер</li>
+        </ul>
+        <h3 id="what-I-can">Что я знаю и умею?</h3>
+        <article class="knowing">
+          <h4>Изученные<br>знания</h4>
+          <div class="skills">
+            <dl class="skills-list upper-text">
+              <dt class="skill-html">html</dt>
+              <dd class="level"><div style="width: 82%;">82%</div></dd>
+              <dt class="skill-css">css</dt>
+              <dd class="level"><div style="width: 74%;">74%</div></dd>
+              <dt class="skill-js">js</dt>
+              <dd class="level"><div style="width: 35%;">35%</div></dd>
+              <dt class="skill-php">php</dt>
+              <dd class="level"><div style="width: 17%;">17%</div></dd>
+              <dt class="skill-less">less</dt>
+              <dd class="level"><div style="width: 11%;">11%</div></dd>
+            </dl>
+          </div>
+        </article>
+        <article class="technology">
+          <h4>Приобретённые<br>навыки</h4>
+          <ul>
+            <li>
+              <img src="img/semantic.jpg" alt="web-семантика" width="90" height="60">
+              <p>Создание семантической разметки по макету</p>
+            </li>
+            <li>
+              <img src="img/Figma 2020.png" alt="logo-figma" width="90" height="60">
+              <p>Экспорт параметров и графики из <a href="https://www.figma.com" class="ref-outsource">Figma<img src="img/icon-open-page.svg" alt=""></a></p>
+            </li>
+            <li>
+              <img src="img/flexbox.png" alt="flex" width="90" height="60">
+              <p>Построение сеток на флексах по макету</p>
+            </li>
+            <li>
+              <img src="img/grid.jpg" alt="grid" width="90" height="60">
+              <p>Построение сеток на гридах по макету</p>
+            </li>
+          </ul>
+        </article>
+        <aside class="although">
+          <p class="special">А также...</p>
+          <p>...верстая проекты, я сам:</p>
+          <ul>
+            <li>Полностью прорабатываю дизайн</li>
+            <li>Детально продумываю контент</li>
+            <li>Держу постоянную коммуникацию с заказчиком, докладывая о результатах работы на каждом её <a class="button" href="#popup-1">этапе</a><div id="popup-1" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">И подэтапе!</div></div></div></li>
+            <li>Помимо <a class="button" href="#popup-2">правок и корректировок</a><div id="popup-2" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">А ведь без них никуда!</div></div></div>, вношу свои идеи и предложения <a class="button" href="#popup-3">в уже готовом виде!</a><div id="popup-3" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">Увы, не все любят такие "сюрпризы"... С другой стороны, это полезное профессиональное качество!</div></div></div></li>
+          </ul>
+        </aside>
+        <aside class="agreed">
+        <p class="special">Согласитесь?</p>
+        <p>Это превосходит <a href="https://habr.com/ru/post/346010/" class="ref-outsource">описание типичного Junior-верстальщика.<sup><img src="img/icon-open-page.svg"></sup></a>
+        <br>И это не может оставить Вас равнодушными!
+        <br>Настало время <a class="button" href="#popup-4">узнать меня лучше!</a><div id="popup-4" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">Уже охота посмотреть на мои работы, я прав?</div></div></div></p>
+        </aside>
+        </div>
+      </section>
+      <!-- Вторая секция ("Блог") -->
+      <section class="chapter" id="Chapterium">
+        <div class="container clearfix">
+          <h2>Мой блог</h2>
+          <h3 id="chapters">Статьи</h3>
+            <aside class="although">
+            <p class="special">Могут быть полезны для:</p>
+              <ul>
+                <li>верстальщиков <i>любого уровня подготовки</i></li>
+                <li>web-разработчиков <i>всех видов и мастей</i></li>
+                <li>тех, кто просто <i>любит код!</i></li>
+              </ul>
+            <p><b>Ознакомиться с остальными статьями можно <a class="ref-insource" href="un-content.html">здесь</a>.</b></p>
+            </aside>
+          <dl>
+            <article class="article-chapter">
+              <dt class="article-chapter-title"><h4>Здравствуй, мой HTML! <i>или</i> Почему я стал верстать?</h4>
+                <dd>
+                  <img src="img/Hello, my HTML!.png" alt="Здравствуй, мой HTML!" width="300" height="200">
+                  <p>Статья... О возможностях кода. И о том, почему я стал верстать<br>
+                  <a class="ref-insource" href="un-content.html">читать полностью</a></p>
+                </dd>
+              </dt>
+            </article>
+            <article class="article-chapter">
+              <dt class="article-chapter-title"><h4>Злая "дивянка"</h4>
+                <dd>
+                  <img src="img/div-evil.png" alt="div не пройдёт!" width="300" height="200">
+                  <p>Что такое "дивянка"? Почему от неё следует избавляться? Что будет, если не сделать этого вовремя?<br>
+                  <a class="ref-insource" href="un-content.html">читать полностью</a></p>
+                </dd>
+              </dt>
+            </article>
+            <article class="article-chapter">
+              <dt class="article-chapter-title"><h4>Скажи комментариям "да"!</h4>
+                <dd>
+                  <img src="img/comments-in-code.png" alt="div не пройдёт!" width="300" height="200">
+                  <p>Почему важно оставлять комментарии при написании кода? Потому что... однажды код откроешь ты, и что увидишь там? Хаос... Невообразмую бесконечность кода. И ни единого поясняющего комменатария о том, что это, и почему оно здесь. Обидно, не правда ли?<br>
+                  <a class="ref-insource" href="un-content.html">читать полностью</a></p>
+                </dd>
+              </dt>
+            </article>
+          </dl>
+        </div>
+      </section>
+      <!-- Третья секция ("Портфолио") -->
+      <section class="portfolio" id="Porter">
+        <div class="container clearfix">
+        <h2>Мои работы</h2>
+          <h3>Лендинги</h3>
+          <article class="example-landing" id="landings">
+            <img src="img/Enjoying-portfolio-for-newest-verstal.png" alt="кусочек титульника проекта" width="280" height="120">
+            <h4>Мой первый лендинг</h4>
+            <p>Шутливое портфолио Junior верстальщика</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/landings/HTML Academy/I_am-vlog/index.html';">посмотреть</button>
+          </article>
+          <article class="example-landing" id="landings">
+            <img src="img/Enjoying-portfolio-for-newest-verstal.png" alt="кусочек титульника проекта" width="280" height="120">
+            <h4>Мой первый лендинг</h4>
+            <p>Шутливое портфолио Junior верстальщика</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/landings/HTML Academy/I_am-vlog/index.html';">посмотреть</button>
+          </article>
+          <article class="example-landing" id="landings">
+            <img src="img/Enjoying-portfolio-for-newest-verstal.png" alt="кусочек титульника проекта" width="280" height="120">
+            <h4>Мой первый лендинг</h4>
+            <p>Шутливое портфолио Junior верстальщика</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/landings/HTML Academy/I_am-vlog/index.html';">посмотреть</button>
+          </article>
+          <h3>Сайты</h3>
+          <article class="example-site" id="sites">
+            <img src="img/raccoon.svg" alt="первый верстающий енот">
+            <h4>Блог начинающего верстальщика</h4>
+            <p>Статический блог про обучение HTML и CSS.</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/sites/HTML Academy/Keks-vlog/index.html';">посмотреть</button>
+          </article>
+          <article class="example-site" id="sites">
+            <img src="img/raccoon.svg" alt="первый верстающий енот">
+            <h4>Блог начинающего верстальщика</h4>
+            <p>Статический блог про обучение HTML и CSS.</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/sites/HTML Academy/Keks-vlog/index.html';">посмотреть</button>
+          </article>
+          <article class="example-site" id="sites">
+            <img src="img/raccoon.svg" alt="первый верстающий енот">
+            <h4>Блог начинающего верстальщика</h4>
+            <p>Статический блог про обучение HTML и CSS.</p>
+            <button class="button-see-all upper-button" onclick="window.location.href='un-content.html';">в каталог</button>
+            <button class="button-see upper-button" onclick="window.location.href='projects/sites/HTML Academy/Keks-vlog/index.html';">посмотреть</button>
+          </article>
+        </div>
+      </section>
+      <!-- Четвёртая секция ("Прайс") -->
+      <section class="price" id="Pricer">
+        <div class="container clearfix">
+        <h2>Прайс-лист</h2>
+          <h3>Стоимость услуг</h3>
+          <div class="container clearfix">
+          <table class="price-list">
+            <tr>
+              <th>№</th>
+              <th colspan="2">Название услуги</th>
+              <th>Стоимость услуги</th>
+            </tr>
+            <tr>
+              <td rowspan="3">1</td>
+              <td class="price-name" rowspan="3">Лэндинг</td>
+              <td class="price-sub-name">Контент</td>
+              <td>1 знак = 1 ₽</td>
+            </tr>
+            <tr>
+              <td class="price-sub-name">Дизайн</td>
+              <td>до 7 500 ₽</td>
+            </tr>
+            <tr>
+              <td class="price-sub-name">Вёрстка</td>
+              <td>15 000 ₽</td>
+            </tr>
+            <tr>
+              <td rowspan="3">2</td>
+              <td class="price-name" rowspan="3">Сайт</td>
+              <td class="price-sub-name">Контент</td>
+              <td>1 знак = 1 ₽</td>
+            </tr>
+            <tr>
+              <td class="price-sub-name">Дизайн</td>
+              <td>до 15 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="price-sub-name">Вёрстка</td>
+              <td>до 30 000 ₽</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="price-name">Анализ кода</td>
+              <td><em>семантики</em></td>
+              <td>1 страница = 1 000 ₽</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="price-name">Анализ кода</td>
+              <td><em>синтаксиса</em></td>
+              <td>1 страница = 1 000 ₽</td>
+            </tr>
+          </table>
+        </div>
+        <!-- Раздел о действующих акциях -->
+        <h3>Акции</h3>
+          <div class="container clearfix">
+            <article class="action">
+              <img src="img/landing-page.png" alt="скидка на первый лэндинг" width="300" height="200">
+              <h4>"Моя земля - моё пространство!"</h4>
+              <p>Закажите 1-й лэндинг,<br>и получите<br>
+              <b>скидку </b><i>20%</i>
+              </p>
+              <button class="button-describe upper-button" onclick="window.location.href='un-content.html';">Описание</button>
+              <button class="button-order upper-button" href="index.html#topic">Заказать</button>
+            </article>
+            <article class="action">
+              <img src="img/site-page.png" alt="скидка на первый сайт" width="300" height="200">
+              <h4>"Мой проект <br> - <br> мои правила!"</h4>
+              <p>Закажите 1-й сайт,<br>и получите<br>
+              <b>скидку </b><i>30%</i>
+              </p>
+              <button class="button-describe upper-button" onclick="window.location.href='un-content.html';">Описание</button>
+              <button class="button-order upper-button" onclick="window.location.href='index.html#topic';">Заказать</button>
+            </article>
+            <article class="action">
+              <img src="img/analyze-code.jpg" alt="скидка на первый анализ кода" width="300" height="200">
+              <h4>"Компактный код не ведает забот!"</h4>
+              <p>Закажите 1-й анализ кода,<br>и получите<br>
+              <b>скидку </b><i>10%</i>
+              </p>
+              <button class="button-describe upper-button" onclick="window.location.href='un-content.html';">Описание</button>
+              <button class="button-order upper-button" onclick="window.location.href='index.html#topic';">Заказать</button>
+            </article>
+          <aside class="space">
+            <p>Следите за новостями!
+            <br>Капсула с <a class="button" href="#popup-5">новыми акциями</a><div id="popup-5" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">И что же там будет?</div></div></div> вот-вот приземлится!
+            <br>Вызвать её можно <a class="ref-insource" href="un-content.html">здесь</a>.
+            <br>Ознакомиться с уже <a class="button" href="#popup-6">прибывшими акциями</a><div id="popup-6" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">3 капсулы, к слову, уже прибыло!</div></div></div></p>
+          </aside>
+        </div>
+        <!-- Раздел о том, почему выбрать следует меня -->
+        <h3 id="why-is-me">Почему я?</h3>
+          <div class="container clearfix">
+            <article class="features">
+            <ul class="feature-list">
+              <li class="feature-item feature-choice">
+                <h4>Выбор</h4>
+                <p>В действительности спектр предлагаемых услуг может показаться мал.</p>
+                <p>И это может разочаровать...</p>
+                <p>Но взгляните на это иначе:
+                <br>совсем не каждый Junior способен <a class="button" href="#popup-7">делать</a><div id="popup-7" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">Понравилась титуальная страница сайта? Есть и другие! А ещё... Загляните в портфолио!</div></div></div> предлагаемое мною.</p>
+              </li>
+              <li class="feature-item feature-quality">
+                <h4>Качество</h4>
+                <p>Это предлагает Junior-верстальщик?</p>
+                <p>Да, я только Junior. И верстаю качественно!
+                <p>Мои умения <a class="ref-insource" href="index.html#what-I-can">постоянно растут!</a>
+                <br>Это значит, что я пишу код грамотно. А о том, что я уже сделал, можно ознакомиться <a class="ref-insource" href="index.html#Porter">здесь</a>.</p>
+              </li>
+              <li class="feature-item feature-price">
+                <h4>Цена</h4>
+                <p>Умеренная?</p>
+                <p>Завышеная?</p>
+                <p>Не угадали!
+                <br>Неторопливо догоняющая <a class="ref-outsource" href="https://habr.com/ru/company/habr_career/blog/439152/">среднюю рыночную<sup><img src="img/icon-open-page.svg"></sup></a></p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      </section>
+      <!-- Пятая секция ("Отзывы") -->
+      <section class="review" id="Revium">
+        <div class="container clearfix">
+          <h2>Отзывы</h2>
+            <h3>Что о моих услугах думают люди?</h3>
+              <article class="review-out">
+                <blockquote class="review-in">
+                  <p>Отзывы - это прекрасно! Они помогают стать лучше: и себе, и своему владельцу. <br>Оставив отзыв, Вы можете изменить <a class="button" href="#popup-8">мир</a><div id="popup-8" class="overlay"><div class="popup"><a class="close" href="#">&times;</a><div class="content">Внутренний Мир Разработчика</div></div></div>...</p>
+                  <cite class="review-author">Здравый смысл.<br>Место пребывания скрыто.<br>Неделю назад.</cite>
+                </blockquote>
+              </article>
+              <article class="review-out">
+                <blockquote class="review-in">
+                  <p>Вы можете стать первым, кто оставит здесь свой отзыв!<br>Достаточно просто заказать лэндинг-портфолио или сайт-блог.</p>
+                  <cite class="review-author">Таинственный голос,<br>раздавшийся где-то в Вашей голове.<br>Только что.</cite>
+                </blockquote>
+              </article>
+          <p class="special">Хочу посмотреть <button class="all-reviews upper-button" href="#">все отзывы</button></p>
+        </div>
+      </section>
+      <!-- Шестая секция ("Контакты") -->
+      <section class="contacts" id="Contactor">
+        <div class="container clearfix">
+          <h2>Как со мной связаться?</h2>
+          <p class="special">Заполните и отправьте эту форму...
+          <br>...и я развею оставшиеся у Вас сомнения!</p>
+          <form class="feedback-form" action="/Rimidalv-mail" method="post">
+            <div class="feedback-form-group left-part">
+              <label class="upper-label" for="original-name">Имя и фамилия:</label>
+              <input type="text" name="raccoon-fullname" id="original-name" placeholder="Владимир Таргариен" required>
+            </div>
+            <div class="feedback-form-group right-part">
+              <label class="upper-label" for="nick-name">Никнэйм:</label>
+              <input type="text" name="raccoon-fullnick" id="nick-name" placeholder="Галактический Енот">
+            </div>
+            <div class="clearfix">
+              <div class="feedback-form-group left-part">
+                <label class="upper-label" for="phone">Контактный телефон:</label>
+                <input type="text" name="raccoon-phone" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-919-616-17-24">
+              </div>
+              <div class="feedback-form-group right-part">
+                <label class="upper-label" for="email">Электронная почта:</label>
+                <input type="text" name="raccoon-email" id="email" placeholder="GalaxyCoon@yandex.ru" required>
+              </div>
+            </div>
+            <div class="checkbox-area">
+              <label>
+              <input type="checkbox" name="subscription" checked>Я согласен(-на) получать уведомления на телефон!
+              </label>
+            </div>
+          <div class="feedback-form-group">
+            <label class="upper-label" for="topic">Тема обращения:</label>
+            <select name="topic" id="topic">
+              <option value="1">Консультация перед заказом</option>
+              <option value="2" selected>Оформление заказа</option>
+              <option value="3">Предложение новых акций</option>
+              <option value="4">Оставить отзыв</option>
+              <option value="5">Замечание по контенту блога</option>
+            </select>
+          </div>
+          <div class="feedback-form-group">
+            <label class="upper-label" for="message">Текст обращения:</label>
+              <textarea name="message" id="message" placeholder="Я назову планету именем твоим... Ой! Я хотел спросить: сверстаешь мне лендинг о терраформировании Марса?" required></textarea>
+          </div>
+            <input class="button-send upper-button" type="submit" value="Отправить">
+          </form>
+          <p class="upper special">или</p>
+          <p class="special">Свяжитесь со мной в <a class="ref-insource" href="index.html#Social">социальных сетях</a></p>
+        </div>
+      </section>
+    </main>
+    <!-- "Подвал" -->
+    <footer class="page-footer">
+      <!-- Верхняя секция "Подвала" (лого и кнопка заказа) -->
+      <section class="footer-top">
+        <div class="container clearfix">
+          <a class="footer-logo" href="index.html"></a>
+          <button class="footer-button-order upper-button" href="index.html#topic">Заказать</button>
+        </div>
+      </section>
+      <!-- Основная секция "Подвала" (меню навигации) -->
+      <section class="footer-middle">
+        <div class="container clearfix">
+          <article class="footer-menu">
+            <h4>Обо мне</h4>
+            <ul>
+              <li><a class="ref-insource" href="index.html#what-I-do">Что я делаю?</a></li>
+              <li><a class="ref-insource" href="index.html#what-I-can">Что я умею?</a></li>
+              <li><a class="ref-insource" href="index.html#why-is-me">Почему я?</a></li>
+            </ul>
+          </article>
+          <article class="footer-menu">
+            <h4>Блог</h4>
+            <ul>
+              <li><a class="ref-insource" href="index.html#chapters">Статьи</a></li>
+            </ul>
+          </article>
+          <article class="footer-menu">
+            <h4>Портфолио</h4>
+            <ul>
+              <li><a class="ref-insource" href="index.html#landings">Лендинги</a></li>
+              <li><a class="ref-insource" href="index.html#sites">Сайты</a></li>
+            </ul>
+          </article>
+          <article class="footer-menu">
+            <h4>Прайс</h4>
+            <ul>
+              <li><a class="ref-insource" href="un-content.html">Скачать<br>акт-лист</a></li>
+              <li><a class="ref-insource" href="un-content.html">Скачать<br>прайс-лист</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- Нижняя секция "Подвала" (ссылки на иконки-кнопки социальных сетей и копирайт) -->
+      <section class="footer-bottom">
+        <div class="container clearfix">
+          <h4>Давайте дружить!</h4>
+            <nav class="footer-social" id="Social">
+              <a class="social-icon-button bg-vk_logo" href="https://vk.com/emptiness24" title="Vkontacte" target="_blank"></a>
+              <a class="social-icon-button bg-tele_logo" href="https://t.me/endless_stranger" title="Telegram" target="_blank"></a>
+              <a class="social-icon-button bg-twi_logo" href="https://twitter.com/207KCl2SyZFNZAz" title="Twitter" target="_blank"></a>
+              <a class="social-icon-button bg-be_logo" href="https://www.behance.net/Raccoon17" title="Behance" target="_blank"></a>
+              <a class="social-icon-button bg-fb_logo" href="https://www.facebook.com/rimidalv.iv" title="Facebook" target="_blank"></a>
+              <a class="social-icon-button bg-in_logo" href="https://www.instagram.com/etern.al_raccoon" title="Instagram" target="_blank"></a>
+              <a class="social-icon-button bg-g-plus_logo" href="https://www.linkedin.com/in/hunger-flower-5599001a4" title="Linkedin" target="_blank"></a>
+              <a class="social-icon-button bg-pin_logo" href="https://www.pinterest.ru/hungerflower" title="Pinterest" target="_blank"></a>
+              <a class="social-icon-button bg-yx_logo" href="mailto:Rimidalv-iv@yansex.ru" title="Yandex" target="_blank"></a>
+            </nav>
+          <a class="footer-copyright">© Владимир Таргариен, 2020</a>
+        </div>
+      </section>
+    </footer>
+    <!--Кнопка скролла на "крышу" -->
+    <a class="up-and-down" title="Наверх">&uarr;</a>
+    <!-- Скрипты -->
+    <script src="themes.js"></script>
+    <script src="up-and-down.js"></script>
+  </body>
+</html>

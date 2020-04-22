@@ -1,0 +1,11 @@
+<?php
+require('components/header.php');
+require('components/hero-image-section-title.php';
+require('components/intro-section-title.php');
+require('components/chapter-section-title.php');
+require('components/portfolio-section-title.php');
+require('components/price-section-title.php');
+require('components/review-section-title.php');
+require('components/contacts-section-title.php');
+require('components/footer.php');
+?>
